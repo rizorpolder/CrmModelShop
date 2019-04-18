@@ -9,7 +9,7 @@ namespace CrmBl.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(CrmBl.Model.CrmContext context)

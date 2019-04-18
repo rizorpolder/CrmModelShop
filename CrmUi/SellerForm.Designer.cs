@@ -1,6 +1,6 @@
 ﻿namespace CrmUi
 {
-    partial class CustomerForm
+    partial class SellerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -67,14 +67,14 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // CustomerForm
+            // SellerForm
             // 
             this.ClientSize = new System.Drawing.Size(270, 208);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelName);
-            this.Name = "CustomerForm";
-            this.Text = "CustomerForm";
+            this.Name = "SellerForm";
+            this.Text = "SellerForm";
             this.Load += new System.EventHandler(this.CustomerForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -83,8 +83,8 @@
 
         #endregion
 
-       
-        
+
+
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
