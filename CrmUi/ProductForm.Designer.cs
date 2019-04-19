@@ -117,6 +117,11 @@
             this.CountNumeric.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CountNumeric.Location = new System.Drawing.Point(139, 72);
+            this.CountNumeric.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.CountNumeric.Name = "CountNumeric";
             this.CountNumeric.Size = new System.Drawing.Size(208, 20);
             this.CountNumeric.TabIndex = 5;
