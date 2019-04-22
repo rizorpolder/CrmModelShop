@@ -8,7 +8,7 @@ namespace CrmBl.Model
         CrmContext db = new CrmContext();
         public int Number { get; set; }
         public int MaxQueueLength { get; set; }
-
+        public int Count => Queue.Count;
         public int ExitCustomer { get; set; } = 5;
 
         public Seller Seller { get; set; }
@@ -40,6 +40,10 @@ namespace CrmBl.Model
         public decimal Dequeue()
         {
             decimal sum = 0;
+            if (Queue.Count == 0)
+            {
+                return 0;
+            }
             var card = Queue.Dequeue();
             if (card != null)
             {
