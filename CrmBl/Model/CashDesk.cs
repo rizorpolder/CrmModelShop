@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Windows.Input;
 namespace CrmBl.Model
 {
     public class CashDesk
@@ -16,6 +16,8 @@ namespace CrmBl.Model
         public Queue<Cart> Queue { get; set; }
 
         public bool IsModel { get; set; }
+
+        public event EventHandler<Check> CheckClosed;
 
         public CashDesk(int number, Seller seller)
         {
@@ -91,13 +93,23 @@ namespace CrmBl.Model
                     }
                 }
 
+                check.Price = sum;
+
+                
                 if (!IsModel)
                 {
                     db.SaveChanges();
                 }
+
+                CheckClosed?.Invoke(this,check);
             }
 
             return sum;
+        }
+
+        public override string ToString()
+        {
+            return $"Касса №{Number}";
         }
     }
 }

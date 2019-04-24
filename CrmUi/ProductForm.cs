@@ -22,24 +22,24 @@ namespace CrmUi
 
         public ProductForm(Product product) : this()
         {
-            Product = product;
+            Product = product ?? new Product();
             textBox1.Text = Product.Name;
             PriceNumeric.Value = Product.Price;
             CountNumeric.Value = Product.Count;
         }
         private void CustomerForm_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var p = Product ?? new Product();
-            if(p!=null)
+            Product = Product ?? new Product();
+            if (Product != null)
             {
-                p.Name = textBox1.Text;
-                p.Price = PriceNumeric.Value;
-                p.Count = Convert.ToInt32(CountNumeric.Value);
+                Product.Name = textBox1.Text;
+                Product.Price = PriceNumeric.Value;
+                Product.Count = Convert.ToInt32(CountNumeric.Value);
             }
             Close();
         }

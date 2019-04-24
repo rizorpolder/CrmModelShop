@@ -37,13 +37,15 @@
             this.CustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CustomerAddToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.CheckToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.сущностиToolStripMenuItem});
+            this.сущностиToolStripMenuItem,
+            this.modelsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -73,7 +75,7 @@
             // ProductAddToolStripMenuItem
             // 
             this.ProductAddToolStripMenuItem.Name = "ProductAddToolStripMenuItem";
-            this.ProductAddToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ProductAddToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.ProductAddToolStripMenuItem.Text = "Добавить";
             this.ProductAddToolStripMenuItem.Click += new System.EventHandler(this.ProductAddToolStripMenuItem_Click);
             // 
@@ -116,6 +118,13 @@
             this.CheckToolStripMenuItem.Text = "Чек";
             this.CheckToolStripMenuItem.Click += new System.EventHandler(this.CheckToolStripMenuItem_Click);
             // 
+            // modelsToolStripMenuItem
+            // 
+            this.modelsToolStripMenuItem.Name = "modelsToolStripMenuItem";
+            this.modelsToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
+            this.modelsToolStripMenuItem.Text = "Моделирование";
+            this.modelsToolStripMenuItem.Click += new System.EventHandler(this.modelsToolStripMenuItem_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,6 +152,7 @@
         private System.Windows.Forms.ToolStripMenuItem ProductAddToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SellerAddToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem CustomerAddToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem modelsToolStripMenuItem;
     }
 }
 
